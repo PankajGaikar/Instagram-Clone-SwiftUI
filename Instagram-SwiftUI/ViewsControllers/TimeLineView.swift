@@ -34,17 +34,18 @@ struct TimeLineView: View {
             .padding([.leading, .trailing], 5)
             .frame(height: 35, alignment: .top)
             
-            //Stories
-            ScrollView (.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(0..<30) { _ in
-                        StoryView(userName: "pankajgaikar", image: "sample_story")
-                    }
-                }
-            }
-            .padding([.leading, .trailing], 5)
             GeometryReader { geometry in
-                List() {
+                ScrollView(showsIndicators: false) {
+                    //Stories
+                    ScrollView (.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(0..<30) { _ in
+                                StoryView(userName: "pankajgaikar", image: "sample_story")
+                            }
+                        }
+                    }
+                    .padding([.leading, .trailing], 5)
+
                     PostView(userName: "pankajgaikar", profileImage: "person.circle", postImage: "sample_post", screenWidth: geometry.size.width)
                     PostView(userName: "pankajgaikar", profileImage: "person.circle", postImage: "sample_post", screenWidth: geometry.size.width)
                     PostView(userName: "pankajgaikar", profileImage: "person.circle", postImage: "sample_post", screenWidth: geometry.size.width)
