@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF95516526186004002C61A3 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF95516426186004002C61A3 /* StoryView.swift */; };
+		BF95516D26186134002C61A3 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF95516C26186134002C61A3 /* PostView.swift */; };
 		BFB342EC26183B90006D6828 /* Instagram_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB342EB26183B90006D6828 /* Instagram_SwiftUIApp.swift */; };
 		BFB342EE26183B90006D6828 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB342ED26183B90006D6828 /* RootView.swift */; };
 		BFB342F026183B92006D6828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB342EF26183B92006D6828 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF95516426186004002C61A3 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		BF95516C26186134002C61A3 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		BFB342E826183B90006D6828 /* Instagram-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB342EB26183B90006D6828 /* Instagram_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_SwiftUIApp.swift; sourceTree = "<group>"; };
 		BFB342ED26183B90006D6828 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF95516326185FF1002C61A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF95516426186004002C61A3 /* StoryView.swift */,
+				BF95516C26186134002C61A3 /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BFB342DF26183B90006D6828 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +118,8 @@
 		BFB342EA26183B90006D6828 /* Instagram-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				BFB3432126184135006D6828 /* Views */,
+				BF95516326185FF1002C61A3 /* Views */,
+				BFB3432126184135006D6828 /* ViewsControllers */,
 				BFB342EB26183B90006D6828 /* Instagram_SwiftUIApp.swift */,
 				BFB342EF26183B92006D6828 /* Assets.xcassets */,
 				BFB342F426183B92006D6828 /* Info.plist */,
@@ -140,7 +154,7 @@
 			path = "Instagram-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
-		BFB3432126184135006D6828 /* Views */ = {
+		BFB3432126184135006D6828 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
 				BFB3431C2618412C006D6828 /* TimeLineView.swift */,
@@ -150,7 +164,7 @@
 				BFB3432F26184163006D6828 /* ActivityView.swift */,
 				BFB3433426184175006D6828 /* ProfileView.swift */,
 			);
-			path = Views;
+			path = ViewsControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +302,8 @@
 				BFB3431D2618412C006D6828 /* TimeLineView.swift in Sources */,
 				BFB342EC26183B90006D6828 /* Instagram_SwiftUIApp.swift in Sources */,
 				BFB3433526184175006D6828 /* ProfileView.swift in Sources */,
+				BF95516526186004002C61A3 /* StoryView.swift in Sources */,
+				BF95516D26186134002C61A3 /* PostView.swift in Sources */,
 				BFB3433026184163006D6828 /* ActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
