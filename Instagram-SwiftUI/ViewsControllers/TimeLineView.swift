@@ -29,13 +29,15 @@ struct TimeLineView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(0..<30) {_ in
-                            StoryView(userName: "pankaj", image: "sample_story")
+                        ForEach(MockData().stories) {
+                            StoryView(story: $0)
                                 .padding(5)
                         }
                     }
                 }
-                PostView(userName: "Pankaj", profileImage: "sample_post", postImage: "sample_post", screenWidth: UIScreen.main.bounds.size.width)
+                ForEach(MockData().posts) {
+                    PostView(post: $0, screenWidth: UIScreen.main.bounds.size.width)
+                }
             }
         }
     }
