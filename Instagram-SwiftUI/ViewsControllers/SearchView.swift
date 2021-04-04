@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        Text("Hello, World! Search View")
+        ScrollView(.vertical, showsIndicators: false) {
+            ScrollView(.horizontal) {
+                StoryView(userName: "pankaj", image: "sample_story")
+            }
+            PostView(userName: "Pankaj", profileImage: "sample_post", postImage: "sample_post", screenWidth: UIScreen.main.bounds.size.width)
+        }
+        .background(Color.red)
     }
 }
 
