@@ -31,7 +31,6 @@ struct TimeLineView: View {
                     HStack {
                         ForEach(MockData().stories) {
                             StoryView(story: $0)
-                                .padding(5)
                         }
                     }
                 }

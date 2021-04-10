@@ -17,13 +17,17 @@ struct StoryView: View {
             Image(story.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 80, height: 80)
-                .cornerRadius(40)
-                .overlay(RoundedRectangle(cornerRadius: 40)
-                            .stroke(Color.orange, lineWidth: 4))
+                .frame(width: 60, height: 60)
+                .cornerRadius(30)
+                .overlay(RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color.orange, lineWidth: 3))
+                .padding([.top, .leading, .trailing], 5)
             Text(story.userName)
+                .truncationMode(.tail)
+                .font(.caption2)
+                .frame(width: 80, height: 15)
         }
-        .frame(height: 115)
+//        .frame(height: 115)
     }
 }
 
