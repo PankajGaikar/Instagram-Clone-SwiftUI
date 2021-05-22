@@ -47,6 +47,5 @@ struct MockData {
         Post(userName: "pankajgaikar", userImage: "sample_post", postImage: "post_16", caption: "Be so true to thyself as thou be not false to others.", likes: "luisenrique and others liked"),
         Post(userName: "abhishekkgadge", userImage: "user_1", postImage: "post_17", caption: "The best reply to an atheist is to give him a good dinner and ask him if he believes there is a cook.", likes: "bhaichung and others liked"),
         Post(userName: "pankajgaikar", userImage: "sample_post", postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
-
     ]
 }
