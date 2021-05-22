@@ -20,6 +20,7 @@
 		BFB3432B26184156006D6828 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3432A26184156006D6828 /* ReelsView.swift */; };
 		BFB3433026184163006D6828 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3432F26184163006D6828 /* ActivityView.swift */; };
 		BFB3433526184175006D6828 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3433426184175006D6828 /* ProfileView.swift */; };
+		BFB34FA826596AF000991B1C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB34FA726596AF000991B1C /* SearchBar.swift */; };
 		BFCD251F261A090F00AEBEEF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD251E261A090F00AEBEEF /* Story.swift */; };
 		BFCD2527261A099100AEBEEF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD2526261A099100AEBEEF /* Post.swift */; };
 		BFCD252D261A0A2600AEBEEF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD252C261A0A2600AEBEEF /* MockData.swift */; };
@@ -62,6 +63,7 @@
 		BFB3432A26184156006D6828 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
 		BFB3432F26184163006D6828 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		BFB3433426184175006D6828 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BFB34FA726596AF000991B1C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BFCD251E261A090F00AEBEEF /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		BFCD2526261A099100AEBEEF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BFCD252C261A0A2600AEBEEF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				BF95516426186004002C61A3 /* StoryView.swift */,
 				BF95516C26186134002C61A3 /* PostView.swift */,
+				BFB34FA726596AF000991B1C /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				BFB343232618414C006D6828 /* SearchView.swift in Sources */,
 				BFCD252D261A0A2600AEBEEF /* MockData.swift in Sources */,
+				BFB34FA826596AF000991B1C /* SearchBar.swift in Sources */,
 				BFCD2527261A099100AEBEEF /* Post.swift in Sources */,
 				BFB3432B26184156006D6828 /* ReelsView.swift in Sources */,
 				BFB342EE26183B90006D6828 /* RootView.swift in Sources */,

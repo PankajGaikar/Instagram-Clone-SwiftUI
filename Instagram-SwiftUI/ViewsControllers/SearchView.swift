@@ -7,9 +7,38 @@
 
 import SwiftUI
 
+let columns = [
+    GridItem(.flexible()),
+    GridItem(.flexible()),
+    GridItem(.flexible()),
+]
+
 struct SearchView: View {
+    
+    let cars: [String] = []
+    @State private var searchText : String = ""
+
     var body: some View {
-        Text("Hello World! Search view here!")
+        ScrollView {
+            SearchBar(text: $searchText, placeholder: "Search")
+
+            LazyVGrid(columns: columns) {
+                ForEach(MockData().posts) {
+                    Image($0.postImage)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.size.width / 3, height: UIScreen.main.bounds.size.width / 3)
+                        .clipped()
+                }
+                ForEach(MockData().posts) {
+                    Image($0.postImage)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.size.width / 3, height: UIScreen.main.bounds.size.width / 3)
+                        .clipped()
+                }
+            }
+        }
     }
 }
 
