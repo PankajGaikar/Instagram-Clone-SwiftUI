@@ -8,33 +8,40 @@
 import SwiftUI
 
 struct RootView: View {
+    @State private var selectedView = 0
+
+    init(){
+        UITabBar.appearance().barTintColor = .white
+    }
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selectedView) {
             TimeLineView()
                 .tabItem {
-                    Image(systemName: "house.fill")
+                    selectedView == 0 ?
+                        Image(systemName: "house.fill") : Image(systemName: "house")
                 }
-                .tag(1)
+                .tag(0)
             SearchView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    selectedView == 1 ? Image(systemName: "magnifyingglass") : Image(systemName: "magnifyingglass")
                 }
-                .tag(2)
+                .tag(1)
             ReelsView()
                 .tabItem {
-                    Image(systemName: "film")
+                    selectedView == 2 ? Image(systemName: "film.fill") : Image(systemName: "film")
                 }
                 .tag(2)
             ActivityView()
                 .tabItem {
-                    Image(systemName: "heart")
+                    selectedView == 3 ? Image(systemName: "heart.fill") : Image(systemName: "heart")
                 }
-                .tag(2)
+                .tag(3)
             ProfileView()
                 .tabItem {
-                    Image(systemName: "person.circle")
+                    selectedView == 4 ? Image(systemName: "person.circle.fill") : Image(systemName: "person.circle")
                 }
-                .tag(2)
+                .tag(4)
         }
     }
 }
