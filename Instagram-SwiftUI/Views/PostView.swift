@@ -24,6 +24,8 @@ struct PostView: View {
                     .padding(.leading, 10)
 
                 Text(post.userName)
+                    .font(Font.system(size: 14, weight: .semibold))
+
                 Spacer()
                 Image("menu")
                     .resizable()
@@ -71,9 +73,8 @@ struct PostView: View {
                         .font(Font.system(size: 14))
                 }
                 .padding(.horizontal, 15)
-                .padding(.vertical, 6)
             }
-            .frame(width: screenWidth, height: 15, alignment: .leading)
+            .frame(maxWidth: screenWidth, maxHeight: 60, alignment: .leading)
             Text(post.likes)
                 .font(Font.system(size: 14, weight: .semibold))
                 .padding(.horizontal, 15)
