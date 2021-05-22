@@ -14,7 +14,7 @@ struct StoryView: View {
         
         //Stories
         VStack {
-            Image(story.image)
+            Image(story.user.userImage)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 60, height: 60)
@@ -22,7 +22,7 @@ struct StoryView: View {
                 .overlay(RoundedRectangle(cornerRadius: 30)
                             .stroke(Color.orange, lineWidth: 3))
                 .padding([.top, .leading, .trailing], 5)
-            Text(story.userName)
+            Text(story.user.userName)
                 .truncationMode(.tail)
                 .font(.caption2)
                 .frame(width: 80, height: 15)

@@ -8,9 +8,8 @@
 import Foundation
 
 struct Story: Identifiable {
-    var id = UUID()
-    var userName: String
-    var image: String
+    let id = UUID()
+    let user: User
     var hasSeen: Bool = false
     var isMyStory: Bool = false
 }

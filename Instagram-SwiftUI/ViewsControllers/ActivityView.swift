@@ -9,7 +9,25 @@ import SwiftUI
 
 struct ActivityView: View {
     var body: some View {
-        Text("Hello, World! Activity View")
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(MockData().activity) {
+                    if $0.activity == .liked {
+                        LikedActivityView(activity: $0)
+                    }
+                    else {
+                        Text("")
+                    }
+                }
+            }
+            .navigationBarTitle("", displayMode: .inline)
+                .toolbar(content: {
+                    Text("Activity")
+                        .font(Font.system(size: 20, weight: .bold))
+                        .padding()
+                        .frame(width: UIScreen.main.bounds.size.width, alignment: .leading)
+                })
+        }
     }
 }
 

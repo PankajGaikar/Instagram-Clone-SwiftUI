@@ -8,12 +8,11 @@
 import Foundation
 
 struct Post: Identifiable {
-    var id = UUID()
-    var userName: String
-    var userImage: String
-    var postImage: String
-    var caption: String
-    var likes: String
-    var hasLiked: Bool = false
-    var hasBookmarked: Bool = false
+    let id = UUID()
+    let user: User
+    let postImage: String
+    let caption: String
+    let likes: String
+    let hasLiked: Bool = false
+    let hasBookmarked: Bool = false
 }

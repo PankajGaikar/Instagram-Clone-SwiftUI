@@ -17,13 +17,13 @@ struct PostView: View {
             
             //Post info.
             HStack {
-                Image(post.userImage)
+                Image(post.user.userImage)
                     .resizable()
                     .cornerRadius(12.5)
                     .frame(width: 25, height: 25)
                     .padding(.leading, 10)
 
-                Text(post.userName)
+                Text(post.user.userName)
                     .font(Font.system(size: 14, weight: .semibold))
 
                 Spacer()
@@ -66,7 +66,7 @@ struct PostView: View {
             .frame(height: 20)
             VStack(alignment: .leading, spacing: 0){
                 Group {
-                    Text(post.userName)
+                    Text(post.user.userName)
                         .font(Font.system(size: 14, weight: .semibold))
                         + Text(" ")
                         + Text(post.caption)

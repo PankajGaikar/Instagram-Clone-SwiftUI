@@ -10,10 +10,6 @@ import SwiftUI
 struct RootView: View {
     @State private var selectedView = 0
 
-    init(){
-        UITabBar.appearance().barTintColor = .white
-    }
-    
     var body: some View {
         TabView(selection: $selectedView) {
             TimeLineView()
