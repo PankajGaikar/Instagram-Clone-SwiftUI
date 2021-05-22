@@ -17,16 +17,20 @@ struct PostView: View {
             
             //Post info.
             HStack {
-                Image(systemName: post.userImage)
+                Image(post.userImage)
+                    .resizable()
+                    .cornerRadius(12.5)
+                    .frame(width: 25, height: 25)
                     .padding(.leading, 10)
+
                 Text(post.userName)
                 Spacer()
-                Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                Image("menu")
                     .resizable()
                     .frame(width: 25, height: 25)
                     .padding(.trailing, 10)
             }
-            .frame(height: 35)
+            .frame(height: 25)
             
             //Image.
             Image(post.postImage)
@@ -39,26 +43,26 @@ struct PostView: View {
             HStack {
                 Image(systemName: "heart")
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 15, height: 15)
                     .padding(5)
                     .padding(.leading, 10)
                 Image(systemName: "bubble.right")
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 15, height: 15)
                     .padding(5)
                 Image(systemName: "paperplane")
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 15, height: 15)
                     .padding(5)
                 Spacer()
                 Image(systemName: "bookmark")
                     .resizable()
-                    .frame(width: 15, height: 20)
+                    .frame(width: 15, height: 18)
                     .padding(5)
                     .padding(.trailing, 10)
             }
+            .frame(height: 20)
             VStack(alignment: .leading, spacing: 0){
-                
                 Group {
                     Text(post.userName)
                         .font(Font.system(size: 14, weight: .semibold))
@@ -69,9 +73,12 @@ struct PostView: View {
                 .padding(.horizontal, 15)
                 .padding(.vertical, 6)
             }
+            .frame(width: screenWidth, height: 15, alignment: .leading)
             Text(post.likes)
                 .font(Font.system(size: 14, weight: .semibold))
                 .padding(.horizontal, 15)
+                .padding(.vertical, 6)
+                .frame(width: screenWidth, height: 15, alignment: .leading)
         }
     }
 }
