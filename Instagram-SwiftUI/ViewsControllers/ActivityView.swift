@@ -12,12 +12,7 @@ struct ActivityView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(MockData().activity) {
-                    if $0.activity == .liked {
-                        LikedActivityView(activity: $0)
-                    }
-                    else {
-                        Text("")
-                    }
+                    LikedActivityView(activity: $0)
                 }
             }
             .navigationBarTitle("", displayMode: .inline)
