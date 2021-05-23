@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    let user: User = User(userName: "pankajgaikar", userImage: "user_16")
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                Text("Hello, World! Profile View")
+                VStack {
+                    ProfileHeader(user: user)
+                }
             }
             .navigationBarTitle("", displayMode: .inline)
                 .toolbar(content: {

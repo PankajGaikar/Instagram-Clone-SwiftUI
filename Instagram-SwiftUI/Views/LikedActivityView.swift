@@ -15,42 +15,42 @@ struct LikedActivityView: View {
         HStack {
             Image(activity.usersInContext.first!.userImage)
                 .resizable()
-                .cornerRadius(15)
+                .cornerRadius(20)
                 .frame(width: 40, height: 40, alignment: .center)
                 .clipped()
 
             if activity.activity == .liked {
                 Text(activity.getUsernames())
-                    .font(Font.system(size: 14, weight: .semibold)) +
+                    .font(Font.system(size: 12, weight: .semibold)) +
                     Text(activity.usersInContext.count == 1 ? " liked your post. " : " and others liked your post. ")
-                    .font(Font.system(size: 14, weight: .medium)) +
+                    .font(Font.system(size: 12, weight: .medium)) +
                     Text(activity.duration)
-                    .font(Font.system(size: 11, weight: .light))
+                    .font(Font.system(size: 10, weight: .light))
             } else if activity.activity == .comment {
                 Text(activity.getUsernames())
-                    .font(Font.system(size: 14, weight: .semibold)) +
+                    .font(Font.system(size: 12, weight: .semibold)) +
                     Text(" mentioned you in a comment: ")
-                    .font(Font.system(size: 14, weight: .medium)) +
+                    .font(Font.system(size: 12, weight: .medium)) +
                     Text((activity.comment))
-                    .font(Font.system(size: 14, weight: .semibold)) +
+                    .font(Font.system(size: 12, weight: .semibold)) +
                     Text(" " + activity.duration)
-                    .font(Font.system(size: 11, weight: .light))
+                    .font(Font.system(size: 10, weight: .light))
             }
             else if activity.activity == .suggestFollower {
                 Text(activity.getUsernames())
-                    .font(Font.system(size: 14, weight: .semibold)) +
+                    .font(Font.system(size: 12, weight: .semibold)) +
                     Text(" who you might know, is on Instagram. ")
-                    .font(Font.system(size: 14, weight: .medium)) +
+                    .font(Font.system(size: 12, weight: .medium)) +
                     Text(activity.duration)
-                    .font(Font.system(size: 11, weight: .light))
+                    .font(Font.system(size: 10, weight: .light))
             }
             else if activity.activity == .newFollower {
                 Text(activity.getUsernames())
-                    .font(Font.system(size: 14, weight: .semibold)) +
+                    .font(Font.system(size: 12, weight: .semibold)) +
                     Text(" started following you. ")
-                    .font(Font.system(size: 14, weight: .medium)) +
+                    .font(Font.system(size: 12, weight: .medium)) +
                     Text(activity.duration)
-                    .font(Font.system(size: 11, weight: .light))
+                    .font(Font.system(size: 10, weight: .light))
             }
             
             Spacer()
