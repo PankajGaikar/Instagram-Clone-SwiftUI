@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ProfileView: View {
-    
     let user: User = User(userName: "pankajgaikar", userImage: "user_16")
     
     var body: some View {
@@ -16,6 +15,8 @@ struct ProfileView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ProfileHeader(user: user)
+                    ProfileControlButtonsView()
+                    ProfileMediaSelectionView()
                     PostGridView(posts: MockData().posts)
                 }
             }
@@ -46,6 +47,8 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        Group {
+            ProfileView()
+        }
     }
 }

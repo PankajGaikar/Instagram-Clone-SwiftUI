@@ -21,7 +21,7 @@ struct StoryView: View {
                 .cornerRadius(30)
                 .overlay(RoundedRectangle(cornerRadius: 30)
                             .stroke(Color.orange, lineWidth: 3))
-                .padding([.top, .leading, .trailing], 5)
+                .padding([.top, .horizontal], 5)
             Text(story.user.userName)
                 .truncationMode(.tail)
                 .font(.caption2)

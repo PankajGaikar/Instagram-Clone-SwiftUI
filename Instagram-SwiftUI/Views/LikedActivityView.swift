@@ -92,8 +92,8 @@ struct LikedActivityView: View {
                     .clipped()
             }
         }
-        .padding([.leading, .trailing], 15)
-        .padding([.top, .bottom], 5)
+        .padding(.horizontal, 15)
+        .padding(.vertical, 5)
         .frame(width: UIScreen.main.bounds.width, alignment: .leading)
     }
 }

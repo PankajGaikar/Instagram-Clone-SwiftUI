@@ -49,7 +49,7 @@ struct ProfileHeader: View {
         HStack {
             Text("I breathe life in objects #Programmer \nStraight Edge \nAiming to make this planet #gogreen \nLoves Football \nFan of @fcbarcelona @liverpoolfc \npankajgaikar.com")
                 .font(.caption)
-                .padding([.leading, .trailing])
+                .padding(.horizontal)
             Spacer()
         }
         
