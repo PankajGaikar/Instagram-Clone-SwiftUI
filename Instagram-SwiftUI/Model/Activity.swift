@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum activityType {
+enum ActivityType {
     case liked
     case newFollower
     case suggestFollower
@@ -16,7 +16,7 @@ enum activityType {
 
 struct Activity: Identifiable {
     let id = UUID()
-    let activity: activityType
+    let activity: ActivityType
     let duration: String //Easier to show on UI.
     let usersInContext: [User]
     let post: Post
