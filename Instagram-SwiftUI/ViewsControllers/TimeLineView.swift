@@ -34,7 +34,7 @@ struct TimeLineView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack {
-                        Image(systemName: "plus.square.on.square")
+                        Image(systemName: "plus.app")
                             .resizable()
                             .frame(width: 25, height: 25)
                             .padding(.trailing, 10)

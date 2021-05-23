@@ -22,7 +22,7 @@ struct LikedActivityView: View {
             if activity.activity == .liked {
                 Text(activity.getUsernames())
                     .font(Font.system(size: 14, weight: .semibold)) +
-                    Text(" and others liked your post. ")
+                    Text(activity.usersInContext.count == 1 ? " liked your post. " : " and others liked your post. ")
                     .font(Font.system(size: 14, weight: .medium)) +
                     Text(activity.duration)
                     .font(Font.system(size: 11, weight: .light))

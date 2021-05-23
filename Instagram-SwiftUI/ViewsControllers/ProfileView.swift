@@ -9,7 +9,32 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text("Hello, World! Profile View")
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                Text("Hello, World! Profile View")
+            }
+            .navigationBarTitle("", displayMode: .inline)
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Text("Pankaj Gaikar")
+                            .font(Font.system(size: 20, weight: .bold))
+                            .padding()
+                            .frame(width: UIScreen.main.bounds.size.width / 2, alignment: .leading)
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        HStack {
+                            Image(systemName: "plus.app")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .padding(.trailing, 10)
+                            Image(systemName: "line.horizontal.3")
+                                .resizable()
+                                .frame(width: 25, height: 20)
+                        }
+                    }
+                })
+        }
+
     }
 }
 
