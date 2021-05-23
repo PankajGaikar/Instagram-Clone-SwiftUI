@@ -20,4 +20,9 @@ struct Activity: Identifiable {
     let duration: String //Easier to show on UI.
     let usersInContext: [User]
     let post: Post
+    var comment: String = ""
+
+    func getUsernames() -> String {
+        return usersInContext.map{$0.userName}.joined(separator: ", ")
+    }
 }
