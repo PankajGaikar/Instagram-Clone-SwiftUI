@@ -16,6 +16,7 @@ struct ProfileView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ProfileHeader(user: user)
+                    PostGridView(posts: MockData().posts)
                 }
             }
             .navigationBarTitle("", displayMode: .inline)
