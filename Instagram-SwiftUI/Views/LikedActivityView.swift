@@ -83,7 +83,7 @@ struct LikedActivityView: View {
                 .foregroundColor(.primary)
                 .cornerRadius(6)
                 .overlay(RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color.primary, lineWidth: 0.7).frame(height: 28, alignment: .center))
+                            .stroke(Color.primary, lineWidth: 0.2).frame(height: 28, alignment: .center))
                 .frame(width: 100, height: 30, alignment: .center)
             } else {
                 Image(activity.post.postImage)
