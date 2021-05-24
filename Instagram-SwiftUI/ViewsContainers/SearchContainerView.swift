@@ -13,7 +13,7 @@ let columns = [
     GridItem(.flexible()),
 ]
 
-struct SearchView: View {
+struct SearchContainerView: View {
     
     let cars: [String] = []
     @State private var searchText : String = ""
@@ -28,6 +28,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchContainerView()
     }
 }

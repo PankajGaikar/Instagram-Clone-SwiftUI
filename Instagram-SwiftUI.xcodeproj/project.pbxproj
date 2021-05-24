@@ -14,20 +14,20 @@
 		BFA51A65265AB34900F06F45 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA51A64265AB34900F06F45 /* PostGridView.swift */; };
 		BFA51A67265AB90D00F06F45 /* ProfileControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA51A66265AB90D00F06F45 /* ProfileControlButtonsView.swift */; };
 		BFB342EC26183B90006D6828 /* Instagram_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB342EB26183B90006D6828 /* Instagram_SwiftUIApp.swift */; };
-		BFB342EE26183B90006D6828 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB342ED26183B90006D6828 /* RootView.swift */; };
+		BFB342EE26183B90006D6828 /* RootContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB342ED26183B90006D6828 /* RootContainerView.swift */; };
 		BFB342F026183B92006D6828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB342EF26183B92006D6828 /* Assets.xcassets */; };
 		BFB342F326183B92006D6828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB342F226183B92006D6828 /* Preview Assets.xcassets */; };
 		BFB342FE26183B93006D6828 /* Instagram_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB342FD26183B93006D6828 /* Instagram_SwiftUITests.swift */; };
 		BFB3430926183B93006D6828 /* Instagram_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3430826183B93006D6828 /* Instagram_SwiftUIUITests.swift */; };
-		BFB3431D2618412C006D6828 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3431C2618412C006D6828 /* TimeLineView.swift */; };
-		BFB343232618414C006D6828 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB343222618414C006D6828 /* SearchView.swift */; };
-		BFB3432B26184156006D6828 /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3432A26184156006D6828 /* ReelsView.swift */; };
-		BFB3433026184163006D6828 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3432F26184163006D6828 /* ActivityView.swift */; };
-		BFB3433526184175006D6828 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3433426184175006D6828 /* ProfileView.swift */; };
+		BFB3431D2618412C006D6828 /* TimeLineContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3431C2618412C006D6828 /* TimeLineContainerView.swift */; };
+		BFB343232618414C006D6828 /* SearchContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB343222618414C006D6828 /* SearchContainerView.swift */; };
+		BFB3432B26184156006D6828 /* ReelsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3432A26184156006D6828 /* ReelsContainerView.swift */; };
+		BFB3433026184163006D6828 /* ActivityContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3432F26184163006D6828 /* ActivityContainerView.swift */; };
+		BFB3433526184175006D6828 /* ProfileContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3433426184175006D6828 /* ProfileContainerView.swift */; };
 		BFB34FA826596AF000991B1C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB34FA726596AF000991B1C /* SearchBar.swift */; };
 		BFB34FAA26596DDA00991B1C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB34FA926596DDA00991B1C /* Activity.swift */; };
 		BFB34FAC2659789F00991B1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB34FAB2659789F00991B1C /* User.swift */; };
-		BFB34FAE26597E3500991B1C /* LikedActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB34FAD26597E3500991B1C /* LikedActivityView.swift */; };
+		BFB34FAE26597E3500991B1C /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB34FAD26597E3500991B1C /* ActivityView.swift */; };
 		BFCD251F261A090F00AEBEEF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD251E261A090F00AEBEEF /* Story.swift */; };
 		BFCD2527261A099100AEBEEF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD2526261A099100AEBEEF /* Post.swift */; };
 		BFCD252D261A0A2600AEBEEF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD252C261A0A2600AEBEEF /* MockData.swift */; };
@@ -66,7 +66,7 @@
 		BFA51A66265AB90D00F06F45 /* ProfileControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControlButtonsView.swift; sourceTree = "<group>"; };
 		BFB342E826183B90006D6828 /* Instagram-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB342EB26183B90006D6828 /* Instagram_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_SwiftUIApp.swift; sourceTree = "<group>"; };
-		BFB342ED26183B90006D6828 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BFB342ED26183B90006D6828 /* RootContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerView.swift; sourceTree = "<group>"; };
 		BFB342EF26183B92006D6828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB342F226183B92006D6828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFB342F426183B92006D6828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,15 +76,15 @@
 		BFB3430426183B93006D6828 /* Instagram-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instagram-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB3430826183B93006D6828 /* Instagram_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		BFB3430A26183B93006D6828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFB3431C2618412C006D6828 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
-		BFB343222618414C006D6828 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		BFB3432A26184156006D6828 /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
-		BFB3432F26184163006D6828 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
-		BFB3433426184175006D6828 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BFB3431C2618412C006D6828 /* TimeLineContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineContainerView.swift; sourceTree = "<group>"; };
+		BFB343222618414C006D6828 /* SearchContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContainerView.swift; sourceTree = "<group>"; };
+		BFB3432A26184156006D6828 /* ReelsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsContainerView.swift; sourceTree = "<group>"; };
+		BFB3432F26184163006D6828 /* ActivityContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityContainerView.swift; sourceTree = "<group>"; };
+		BFB3433426184175006D6828 /* ProfileContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContainerView.swift; sourceTree = "<group>"; };
 		BFB34FA726596AF000991B1C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BFB34FA926596DDA00991B1C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BFB34FAB2659789F00991B1C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		BFB34FAD26597E3500991B1C /* LikedActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedActivityView.swift; sourceTree = "<group>"; };
+		BFB34FAD26597E3500991B1C /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		BFCD251E261A090F00AEBEEF /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		BFCD2526261A099100AEBEEF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BFCD252C261A0A2600AEBEEF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		BF95516326185FF1002C61A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BFB34FAD26597E3500991B1C /* LikedActivityView.swift */,
+				BFB34FAD26597E3500991B1C /* ActivityView.swift */,
 				BF95516426186004002C61A3 /* StoryView.swift */,
 				BF95516C26186134002C61A3 /* PostView.swift */,
 				BFB34FA726596AF000991B1C /* SearchBar.swift */,
@@ -168,7 +168,7 @@
 				BFCD252B261A0A0400AEBEEF /* Data */,
 				BFCD251D261A08FB00AEBEEF /* Model */,
 				BF95516326185FF1002C61A3 /* Views */,
-				BFB3432126184135006D6828 /* ViewsControllers */,
+				BFB3432126184135006D6828 /* ViewsContainers */,
 				BFB342EB26183B90006D6828 /* Instagram_SwiftUIApp.swift */,
 				BFB342EF26183B92006D6828 /* Assets.xcassets */,
 				BFB342F426183B92006D6828 /* Info.plist */,
@@ -203,17 +203,17 @@
 			path = "Instagram-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
-		BFB3432126184135006D6828 /* ViewsControllers */ = {
+		BFB3432126184135006D6828 /* ViewsContainers */ = {
 			isa = PBXGroup;
 			children = (
-				BFB3431C2618412C006D6828 /* TimeLineView.swift */,
-				BFB342ED26183B90006D6828 /* RootView.swift */,
-				BFB343222618414C006D6828 /* SearchView.swift */,
-				BFB3432A26184156006D6828 /* ReelsView.swift */,
-				BFB3432F26184163006D6828 /* ActivityView.swift */,
-				BFB3433426184175006D6828 /* ProfileView.swift */,
+				BFB3431C2618412C006D6828 /* TimeLineContainerView.swift */,
+				BFB342ED26183B90006D6828 /* RootContainerView.swift */,
+				BFB343222618414C006D6828 /* SearchContainerView.swift */,
+				BFB3432A26184156006D6828 /* ReelsContainerView.swift */,
+				BFB3432F26184163006D6828 /* ActivityContainerView.swift */,
+				BFB3433426184175006D6828 /* ProfileContainerView.swift */,
 			);
-			path = ViewsControllers;
+			path = ViewsContainers;
 			sourceTree = "<group>";
 		};
 		BFCD251D261A08FB00AEBEEF /* Model */ = {
@@ -368,24 +368,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF126359265AC3650062BE6A /* ProfileMediaSelectionView.swift in Sources */,
-				BFB343232618414C006D6828 /* SearchView.swift in Sources */,
+				BFB343232618414C006D6828 /* SearchContainerView.swift in Sources */,
 				BFCD252D261A0A2600AEBEEF /* MockData.swift in Sources */,
-				BFB34FAE26597E3500991B1C /* LikedActivityView.swift in Sources */,
+				BFB34FAE26597E3500991B1C /* ActivityView.swift in Sources */,
 				BFB34FAA26596DDA00991B1C /* Activity.swift in Sources */,
 				BFB34FA826596AF000991B1C /* SearchBar.swift in Sources */,
 				BFCD2527261A099100AEBEEF /* Post.swift in Sources */,
-				BFB3432B26184156006D6828 /* ReelsView.swift in Sources */,
-				BFB342EE26183B90006D6828 /* RootView.swift in Sources */,
+				BFB3432B26184156006D6828 /* ReelsContainerView.swift in Sources */,
+				BFB342EE26183B90006D6828 /* RootContainerView.swift in Sources */,
 				BFA51A65265AB34900F06F45 /* PostGridView.swift in Sources */,
-				BFB3431D2618412C006D6828 /* TimeLineView.swift in Sources */,
+				BFB3431D2618412C006D6828 /* TimeLineContainerView.swift in Sources */,
 				BFB34FAC2659789F00991B1C /* User.swift in Sources */,
 				BFA51A62265A974100F06F45 /* ProfileHeader.swift in Sources */,
 				BFA51A67265AB90D00F06F45 /* ProfileControlButtonsView.swift in Sources */,
 				BFB342EC26183B90006D6828 /* Instagram_SwiftUIApp.swift in Sources */,
-				BFB3433526184175006D6828 /* ProfileView.swift in Sources */,
+				BFB3433526184175006D6828 /* ProfileContainerView.swift in Sources */,
 				BF95516526186004002C61A3 /* StoryView.swift in Sources */,
 				BF95516D26186134002C61A3 /* PostView.swift in Sources */,
-				BFB3433026184163006D6828 /* ActivityView.swift in Sources */,
+				BFB3433026184163006D6828 /* ActivityContainerView.swift in Sources */,
 				BFCD251F261A090F00AEBEEF /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

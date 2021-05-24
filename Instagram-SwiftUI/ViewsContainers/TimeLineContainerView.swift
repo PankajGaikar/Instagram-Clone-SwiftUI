@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimeLineView: View {
+struct TimeLineContainerView: View {
     
     var body: some View {
         NavigationView {
@@ -50,6 +50,6 @@ struct TimeLineView: View {
 
 struct TimeLineView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeLineView()
+        TimeLineContainerView()
     }
 }

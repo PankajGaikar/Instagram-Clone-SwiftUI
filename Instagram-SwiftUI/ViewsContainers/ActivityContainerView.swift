@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ActivityView: View {
+struct ActivityContainerView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(MockData().activity) {
-                    LikedActivityView(activity: $0)
+                    ActivityView(activity: $0)
                 }
             }
             .navigationBarTitle("", displayMode: .inline)
@@ -28,6 +28,6 @@ struct ActivityView: View {
 
 struct ActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityView()
+        ActivityContainerView()
     }
 }

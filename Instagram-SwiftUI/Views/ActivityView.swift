@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LikedActivityView: View {
+struct ActivityView: View {
     
     let activity: Activity
     
@@ -100,7 +100,7 @@ struct LikedActivityView: View {
 
 struct LikedActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        LikedActivityView(activity: Activity(activity: .liked,
+        ActivityView(activity: Activity(activity: .liked,
                                              duration: "5h",
                                              usersInContext: [User(userName: "axeyked", userImage: "user_2")],
                                              post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post") , postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked")))
@@ -109,7 +109,7 @@ struct LikedActivityView_Previews: PreviewProvider {
 
 struct LikedActivityView_Previews_Comment: PreviewProvider {
     static var previews: some View {
-        LikedActivityView(activity: Activity(activity: .comment,
+        ActivityView(activity: Activity(activity: .comment,
                                              duration: "5h",
                                              usersInContext: [User(userName: "zendaya", userImage: "user_9")],
                                              post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
@@ -120,7 +120,7 @@ struct LikedActivityView_Previews_Comment: PreviewProvider {
 
 struct LikedActivityView_Previews_SuggestedFollower: PreviewProvider {
     static var previews: some View {
-        LikedActivityView(activity: Activity(activity: .suggestFollower,
+        ActivityView(activity: Activity(activity: .suggestFollower,
                                              duration: "6h",
                                              usersInContext: [User(userName: "hiker.benn", userImage: "user_18")],
                                              post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
@@ -130,7 +130,7 @@ struct LikedActivityView_Previews_SuggestedFollower: PreviewProvider {
 
 struct LikedActivityView_Previews_NewFollower: PreviewProvider {
     static var previews: some View {
-        LikedActivityView(activity: Activity(activity: .newFollower,
+        ActivityView(activity: Activity(activity: .newFollower,
                                              duration: "18h",
                                              usersInContext: [User(userName: "power_of_shiva_99", userImage: "user_20")],
                                              post: Post(user: User(userName: "pankajgaikar", userImage: "sample_post"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),

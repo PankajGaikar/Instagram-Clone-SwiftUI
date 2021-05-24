@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ReelsView: View {
+struct ReelsContainerView: View {
     var body: some View {
         Text("Hello, World! Reels View")
     }
@@ -15,6 +15,6 @@ struct ReelsView: View {
 
 struct ReelsView_Previews: PreviewProvider {
     static var previews: some View {
-        ReelsView()
+        ReelsContainerView()
     }
 }
