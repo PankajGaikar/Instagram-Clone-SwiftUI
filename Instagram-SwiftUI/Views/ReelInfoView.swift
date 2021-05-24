@@ -12,18 +12,25 @@ struct ReelInfoView: View {
         VStack{
             Spacer()
             HStack {
+                VStack(alignment: .leading, spacing: 0) {
+                    HStack {
+                        Image("user_4")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .cornerRadius(20)
+                        Text("cristiano")
+                            .font(Font.system(size: 18, weight: .semibold))
+                    }
+                    .padding(.vertical)
+                    Text("O speculators about perpetual motion, how many vain chimeras have you created in the like quest? Go and take your place with the seekers after gold.")
+                        .font(Font.system(size: 12, weight: .light))
+                        .lineLimit(2)
+                        .padding(.bottom)
+                }
+                .padding(.bottom, -100)
+                .padding([.horizontal, .top])
                 Spacer()
                 VStack(spacing: 10){
-                    Button(action: {
-                        
-                    }) {
-                        Image("pic")
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 55, height: 55)
-                            .clipShape(Circle())
-                    }
-                    
                     Button(action: {
                         
                     }) {
