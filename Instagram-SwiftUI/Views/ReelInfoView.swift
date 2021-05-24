@@ -6,26 +6,30 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ReelInfoView: View {
+    let video: Video
     var body: some View {
         VStack{
             Spacer()
             HStack {
                 VStack(alignment: .leading, spacing: 0) {
                     HStack {
-                        Image("user_4")
+                        Image(video.user.userImage)
                             .resizable()
                             .frame(width: 40, height: 40)
                             .cornerRadius(20)
-                        Text("cristiano")
+                        Text(video.user.userName)
                             .font(Font.system(size: 18, weight: .semibold))
+                            .foregroundColor(.white)
                     }
                     .padding(.vertical)
-                    Text("O speculators about perpetual motion, how many vain chimeras have you created in the like quest? Go and take your place with the seekers after gold.")
-                        .font(Font.system(size: 12, weight: .light))
+                    Text(video.caption)
+                        .font(Font.system(size: 12, weight: .semibold))
                         .lineLimit(2)
                         .padding(.bottom)
+                        .foregroundColor(.white)
                 }
                 .padding(.bottom, -100)
                 .padding([.horizontal, .top])
@@ -52,7 +56,7 @@ struct ReelInfoView: View {
                             Image(systemName: "message")
                                 .font(.title)
                                 .foregroundColor(.white)
-                            Text("27.2k")
+                            Text(video.likes)
                                 .foregroundColor(.white)
                         }
                     }
@@ -60,23 +64,21 @@ struct ReelInfoView: View {
                     Button(action: {
                         
                     }) {
-                        
                         VStack(spacing: 8){
-                            Image(systemName: "arrowshape.turn.up.right")
+                            Image(systemName: "paperplane")
                                 .font(.title)
                                 .foregroundColor(.white)
-                            Text("Share")
-                                .foregroundColor(.white)
                         }
                     }
                     
                     Button(action: {
                         
                     }) {
-                        Image("menu")
+                        Image("menu_solid")
+                            .renderingMode(.template)
                             .resizable()
-                            .frame(width: 25, height: 25)
                             .foregroundColor(.white)
+                            .frame(width: 25, height: 25)
                     }
                     
                     Image("user_13")
@@ -98,6 +100,10 @@ struct ReelInfoView: View {
 
 struct ReelInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ReelInfoView()
+        ReelInfoView(video: Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_7", ofType: "mp4")!)),
+                                  likes: "17M",
+                                  comments: "2k",
+                                  caption: "After all, for mankind as a whole there are no exports. We did not start developing by obtaining foreign exchange from Mars or the moon. Mankind is a closed society.",
+                                  user: User(userName: "fernandotorres", userImage: "user_11")))
     }
 }

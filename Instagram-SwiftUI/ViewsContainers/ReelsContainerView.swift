@@ -17,7 +17,6 @@ struct ReelsContainerView: View {
     var body: some View{
         ZStack{
             PlayerPageView(videos: self.$videos)
-            ReelInfoView()
         }
         .background(Color.black.edgesIgnoringSafeArea(.all))
         .edgesIgnoringSafeArea(.all)

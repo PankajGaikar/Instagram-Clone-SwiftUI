@@ -35,6 +35,7 @@ struct PlayerView : View {
                     Player(player: self.videos[i].player)
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                         .offset(y: -5)
+                    ReelInfoView(video: self.videos[i])
                 }
             }
         }
