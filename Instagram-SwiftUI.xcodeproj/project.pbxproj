@@ -52,6 +52,13 @@
 
 /* Begin PBXFileReference section */
 		BF126358265AC3650062BE6A /* ProfileMediaSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMediaSelectionView.swift; sourceTree = "<group>"; };
+		BF12635B265B939B0062BE6A /* reel_6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_6.mp4; sourceTree = "<group>"; };
+		BF12635C265B939C0062BE6A /* reel_7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_7.mp4; sourceTree = "<group>"; };
+		BF12635D265B939C0062BE6A /* reel_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_4.mp4; sourceTree = "<group>"; };
+		BF12635E265B939C0062BE6A /* reel_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_5.mp4; sourceTree = "<group>"; };
+		BF12635F265B939C0062BE6A /* reel_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_1.mp4; sourceTree = "<group>"; };
+		BF126360265B939C0062BE6A /* reel_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_3.mp4; sourceTree = "<group>"; };
+		BF126361265B939D0062BE6A /* reel_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel_2.mp4; sourceTree = "<group>"; };
 		BF95516426186004002C61A3 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		BF95516C26186134002C61A3 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		BFA51A61265A974100F06F45 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
@@ -108,6 +115,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF12635A265B931E0062BE6A /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				BF12635F265B939C0062BE6A /* reel_1.mp4 */,
+				BF126361265B939D0062BE6A /* reel_2.mp4 */,
+				BF126360265B939C0062BE6A /* reel_3.mp4 */,
+				BF12635D265B939C0062BE6A /* reel_4.mp4 */,
+				BF12635E265B939C0062BE6A /* reel_5.mp4 */,
+				BF12635B265B939B0062BE6A /* reel_6.mp4 */,
+				BF12635C265B939C0062BE6A /* reel_7.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		BF95516326185FF1002C61A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +232,7 @@
 		BFCD252B261A0A0400AEBEEF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BF12635A265B931E0062BE6A /* Videos */,
 				BFCD252C261A0A2600AEBEEF /* MockData.swift */,
 			);
 			path = Data;
