@@ -15,15 +15,15 @@ Work Needed
 
 # Images -
 ## Dark Mode -
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/IMG_1607.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/activity-dark.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/profile-dark.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/reels-dark.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/search-dark.PNG)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/IMG_1607.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/activity-dark.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/profile-dark.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/reels-dark.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/search-dark.PNG | width=300)
 
 ## Light Mode -
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/activity-light.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/home-light.jpeg)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/profile-light.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/reels-light.PNG)
-![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/search-light.PNG)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/activity-light.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/home-light.jpeg | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/profile-light.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/reels-light.PNG | width=300)
+![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/search-light.PNG | width=300)
