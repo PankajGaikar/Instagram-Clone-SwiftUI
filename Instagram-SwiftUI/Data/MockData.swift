@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFoundation
 
 struct MockData {
     var stories: [Story] = [
@@ -1163,5 +1164,22 @@ struct MockData {
                  usersInContext: [User(userName: "power_of_shiva_99", userImage: "user_20")],
                  post: Post(user: User(userName: "pankajgaikar", userImage: "user_16"), postImage: "post_18", caption: "If any one attempts to haul down the American flag, shoot him on the spot.", likes: "leomessi and others liked"),
                  comment: ""),
+    ]
+    
+    let videos: [Video] = [
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_1", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_3", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_4", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_5", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_6", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_7", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_2", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_1", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_3", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_4", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_5", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_6", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_7", ofType: "mp4")!)), replay: false),
+        Video(player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "reel_2", ofType: "mp4")!)), replay: false),
     ]
 }

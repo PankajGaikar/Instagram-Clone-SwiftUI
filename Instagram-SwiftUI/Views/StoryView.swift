@@ -27,7 +27,6 @@ struct StoryView: View {
                 .font(.caption2)
                 .frame(width: 80, height: 15)
         }
-//        .frame(height: 115)
     }
 }
 

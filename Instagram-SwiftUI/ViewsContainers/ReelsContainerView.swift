@@ -6,10 +6,21 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ReelsContainerView: View {
-    var body: some View {
-        Text("Hello, World! Reels View")
+    
+    @State var index = 0
+    @State var top = 0
+    @State var videos = MockData().videos
+    
+    var body: some View{
+        ZStack{
+            PlayerPageView(videos: self.$videos)
+            ReelInfoView()
+        }
+        .background(Color.black.edgesIgnoringSafeArea(.all))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

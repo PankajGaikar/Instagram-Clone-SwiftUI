@@ -1,5 +1,5 @@
 //
-//  LinkedActivityView.swift
+//  ActivityView.swift
 //  Instagram-SwiftUI
 //
 //  Created by Pankaj Gaikar on 22/05/21.
