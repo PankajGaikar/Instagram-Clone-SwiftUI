@@ -43,7 +43,7 @@ struct ReelInfoView: View {
                             Image(systemName: "heart")
                                 .font(.title)
                                 .foregroundColor(.white)
-                            Text("1M")
+                            Text(video.likes)
                                 .foregroundColor(.white)
                         }
                     }
@@ -56,7 +56,7 @@ struct ReelInfoView: View {
                             Image(systemName: "message")
                                 .font(.title)
                                 .foregroundColor(.white)
-                            Text(video.likes)
+                            Text(video.comments)
                                 .foregroundColor(.white)
                         }
                     }

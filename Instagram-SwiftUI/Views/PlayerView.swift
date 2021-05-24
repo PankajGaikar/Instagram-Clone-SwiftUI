@@ -8,6 +8,11 @@
 import SwiftUI
 import AVKit
 
+protocol ViewLifecycleDelegate {
+    func onAppear()
+    func onDisappear()
+}
+
 struct Player : UIViewControllerRepresentable {
     
     var player : AVPlayer
@@ -27,6 +32,7 @@ struct Player : UIViewControllerRepresentable {
 
 struct PlayerView : View {
     @Binding var videos : [Video]
+    let lifecycleDelegate: ViewLifecycleDelegate?
     
     var body: some View{
         VStack(spacing: 0){
@@ -40,18 +46,10 @@ struct PlayerView : View {
             }
         }
         .onAppear {
-            self.videos[0].player.play()
-            self.videos[0].player.actionAtItemEnd = .none
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.videos[0].player.currentItem, queue: .main) { (_) in
-                self.videos[0].player.seek(to: .zero)
-                self.videos[0].player.play()
-            }
+            self.lifecycleDelegate?.onAppear()
         }
         .onDisappear {
-            for i in 0..<videos.count{
-                videos[i].player.seek(to: .zero)
-                videos[i].player.pause()
-            }
+            self.lifecycleDelegate?.onDisappear()
         }
     }
 }
@@ -68,7 +66,7 @@ struct PlayerPageView : UIViewRepresentable {
         
         let view = UIScrollView()
         
-        let childView = UIHostingController(rootView: PlayerView(videos: self.$videos))
+        let childView = UIHostingController(rootView: PlayerView(videos: self.$videos, lifecycleDelegate: context.coordinator))
         childView.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat((videos.count)))
         view.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat((videos.count)))
         
@@ -89,11 +87,10 @@ struct PlayerPageView : UIViewRepresentable {
         }
     }
     
-    class Coordinator : NSObject,UIScrollViewDelegate{
+    class Coordinator : NSObject, UIScrollViewDelegate, ViewLifecycleDelegate{
         
         var parent : PlayerPageView
         var index = 0
-        
         init(parent1 : PlayerPageView) {
             parent = parent1
         }
@@ -102,12 +99,9 @@ struct PlayerPageView : UIViewRepresentable {
             let currentindex = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
             
             if index != currentindex{
+                parent.videos[index].player.seek(to: .zero)
+                parent.videos[index].player.pause()
                 index = currentindex
-                
-                for i in 0..<parent.videos.count{
-                    parent.videos[i].player.seek(to: .zero)
-                    parent.videos[i].player.pause()
-                }
                 parent.videos[index].player.play()
                 parent.videos[index].player.actionAtItemEnd = .none
                 NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: parent.videos[index].player.currentItem, queue: .main) { (_) in
@@ -116,5 +110,16 @@ struct PlayerPageView : UIViewRepresentable {
                 }
             }
         }
+        
+        func onAppear() {
+            parent.videos[self.index].player.seek(to: .zero)
+            parent.videos[self.index].player.play()
+        }
+        
+        func onDisappear() {
+            parent.videos[self.index].player.seek(to: .zero)
+            parent.videos[self.index].player.pause()
+        }
+
     }
 }
