@@ -7,15 +7,9 @@
 
 import SwiftUI
 
-let columns = [
-    GridItem(.flexible()),
-    GridItem(.flexible()),
-    GridItem(.flexible()),
-]
-
 struct SearchContainerView: View {
     
-    let cars: [String] = []
+    private let searchStrings: [String] = []
     @State private var searchText : String = ""
 
     var body: some View {

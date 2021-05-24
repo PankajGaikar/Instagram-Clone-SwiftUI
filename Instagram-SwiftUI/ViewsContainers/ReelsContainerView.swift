@@ -10,9 +10,9 @@ import AVKit
 
 struct ReelsContainerView: View {
     
-    @State var index = 0
-    @State var top = 0
-    @State var videos = MockData().videos
+    @State private var index = 0
+    @State private var top = 0
+    @State private var videos = MockData().videos
     
     var body: some View{
         ZStack{

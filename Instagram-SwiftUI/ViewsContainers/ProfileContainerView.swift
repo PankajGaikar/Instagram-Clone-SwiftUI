@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileContainerView: View {
-    let user: User = User(userName: "pankajgaikar", userImage: "user_16")
+    private let user: User = User(userName: "pankajgaikar", userImage: "user_16")
     
     var body: some View {
         NavigationView {

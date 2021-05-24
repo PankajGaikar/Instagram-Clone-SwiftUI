@@ -10,6 +10,11 @@ import SwiftUI
 struct PostGridView: View {
     
     let posts: [Post]
+    private let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
     
     var body: some View {
         LazyVGrid(columns: columns) {

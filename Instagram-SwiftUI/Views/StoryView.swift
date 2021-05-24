@@ -9,7 +9,8 @@ import SwiftUI
 
 struct StoryView: View {
     let story: Story
-
+    var gradient = Gradient(colors: [.yellow, .red, .purple, .orange, .pink, .red])
+    
     var body: some View {
         
         //Stories
@@ -19,8 +20,7 @@ struct StoryView: View {
                 .scaledToFill()
                 .frame(width: 60, height: 60)
                 .cornerRadius(30)
-                .overlay(RoundedRectangle(cornerRadius: 30)
-                            .stroke(Color.orange, lineWidth: 3))
+                .overlay(Circle().stroke(LinearGradient( gradient: gradient, startPoint: .bottomLeading, endPoint: .topTrailing) , style: StrokeStyle(lineWidth: 2.5, lineCap: .round)))
                 .padding([.top, .horizontal], 5)
             Text(story.user.userName)
                 .truncationMode(.tail)
