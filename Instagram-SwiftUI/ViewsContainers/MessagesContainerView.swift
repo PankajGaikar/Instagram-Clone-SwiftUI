@@ -1,25 +1,16 @@
 //
-//  ProfileView.swift
+//  MessagesContainerView.swift
 //  Instagram-SwiftUI
 //
-//  Created by Pankaj Gaikar on 03/04/21.
+//  Created by Pankaj Gaikar on 28/05/21.
 //
 
 import SwiftUI
 
-struct ProfileContainerView: View {
-    private let user: User = User(userName: "pankajgaikar", userImage: "user_16")
-    
+struct MessagesContainerView: View {
     var body: some View {
         NavigationView {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    ProfileHeader(user: user)
-                    ProfileControlButtonsView()
-                    ProfileMediaSelectionView()
-                    PostGridView(posts: MockData().posts)
-                }
-            }
+            Text("Hello, Messages!")
             .navigationBarTitle("", displayMode: .inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading) {
@@ -30,24 +21,25 @@ struct ProfileContainerView: View {
                     }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         HStack {
-                            Image(systemName: "plus.app")
+                            Image(systemName: "video")
                                 .resizable()
-                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .font(.system(size: 20))
                                 .padding(.trailing, 10)
-                            Image(systemName: "line.horizontal.3")
+                            Image(systemName: "square.and.pencil")
                                 .resizable()
-                                .frame(width: 25, height: 20)
+                                .scaledToFit()
+                                .font(.system(size: 20))
                         }
                     }
                 })
         }
+        .navigationBarHidden(true)
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct MessagesContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ProfileContainerView()
-        }
+        MessagesContainerView()
     }
 }

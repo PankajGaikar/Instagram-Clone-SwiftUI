@@ -41,6 +41,7 @@
 		BFCD251F261A090F00AEBEEF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD251E261A090F00AEBEEF /* Story.swift */; };
 		BFCD2527261A099100AEBEEF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD2526261A099100AEBEEF /* Post.swift */; };
 		BFCD252D261A0A2600AEBEEF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD252C261A0A2600AEBEEF /* MockData.swift */; };
+		BFED1ACA26614F2100FFAF7B /* MessagesContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFED1AC926614F2100FFAF7B /* MessagesContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		BFCD251E261A090F00AEBEEF /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		BFCD2526261A099100AEBEEF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BFCD252C261A0A2600AEBEEF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		BFED1AC926614F2100FFAF7B /* MessagesContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				BFB3432A26184156006D6828 /* ReelsContainerView.swift */,
 				BFB3432F26184163006D6828 /* ActivityContainerView.swift */,
 				BFB3433426184175006D6828 /* ProfileContainerView.swift */,
+				BFED1AC926614F2100FFAF7B /* MessagesContainerView.swift */,
 			);
 			path = ViewsContainers;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				BFB3433526184175006D6828 /* ProfileContainerView.swift in Sources */,
 				BF95516526186004002C61A3 /* StoryView.swift in Sources */,
 				BF95516D26186134002C61A3 /* PostView.swift in Sources */,
+				BFED1ACA26614F2100FFAF7B /* MessagesContainerView.swift in Sources */,
 				BFB3433026184163006D6828 /* ActivityContainerView.swift in Sources */,
 				BF126363265B98930062BE6A /* Video.swift in Sources */,
 				BFCD251F261A090F00AEBEEF /* Story.swift in Sources */,

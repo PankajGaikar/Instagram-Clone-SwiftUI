@@ -38,9 +38,13 @@ struct TimeLineContainerView: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                             .padding(.trailing, 10)
-                        Image(systemName: "message")
-                            .resizable()
-                            .frame(width: 25, height: 25)
+                        NavigationLink(destination: MessagesContainerView()) {
+                            Image(systemName: "message")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                        }
+
                     }
                 }
             })
