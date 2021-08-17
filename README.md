@@ -1,5 +1,5 @@
 # Instagram-SwiftUI
-An attempt make a Instagram-ish UI with SwiftUI. It is all about cloning the UI and not functionality. I am thinking if I should add functionality to this.
+An attempt make a Instagram clone with SwiftUI. It is all about cloning the UI and not functionality. I am thinking if I should add functionality to this.
 
 Implemented screens
 - Home ✅
@@ -27,3 +27,5 @@ Work Needed
 ![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/profile-light.PNG)
 ![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/reels-light.PNG)
 ![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/search-light.PNG)
+
+Keywords - Instagram Clone. Swift. SwiftUI. iOS. Instagram Clone Tutorial. Instagram Clone with SwiftUI. 
