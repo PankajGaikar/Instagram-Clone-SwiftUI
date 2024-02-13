@@ -1,7 +1,7 @@
 # Instagram-SwiftUI
-An attempt make a Instagram clone with SwiftUI. It is all about cloning the UI and not functionality. I am thinking if I should add functionality to this.
+Instagram-SwiftUI is a project that attempts to make a clone of the Instagram app using SwiftUI. The primary goal of this project is to replicate the user interface (UI) of Instagram, focusing on visual elements rather than functional implementation. I am thinking if I should add functionality to this.
 
-Implemented screens
+# Implemented screens
 - Home ✅
 - Search ✅
 - Reels ✅
@@ -9,9 +9,11 @@ Implemented screens
 - Profile ✅
 - iOS Dark Mode/Light Mode ✅
 
-Work Needed 
+# Project Scope and Future Plans:
 - Functionality 🔜
 - Messages 🔜
+
+Currently, the project's scope is centered around replicating the UI of Instagram. Functional features such as posting, messaging, and user interactions are not yet implemented. However, plans may include adding functionality for features like Messages and refining the UI design to enhance user experience.
 
 # Images -
 ## Dark Mode -
@@ -29,3 +31,11 @@ Work Needed
 ![alt tag](https://github.com/PankajGaikar/Instagram-SwiftUI/blob/main/Screenshots/search-light.PNG)
 
 Keywords - Instagram Clone. Swift. SwiftUI. iOS. Instagram Clone Tutorial. Instagram Clone with SwiftUI. 
+
+# Contributing Guidelines:
+Contributions to the project are welcome! To contribute, please follow these guidelines:
+
+- Fork the repository and create a new branch for your contributions.
+- Submit a pull request with your changes, following any coding standards or guidelines specified in the project.
+- Report any issues or bugs by opening an issue on the GitHub repository.
+
