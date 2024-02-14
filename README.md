@@ -48,6 +48,6 @@ Contributions to the project are welcome! To contribute, please follow these gui
 - Report any issues or bugs by opening an issue on the GitHub repository.
 
 # License Information
-This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE.md) file.
 
 
